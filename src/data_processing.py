@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Load dataset
-file_path = r"C:\Users\HUAWEI\Desktop\Project-Al-ezz Al-dumaini-2101370\Project-Al-ezz Al-dumaini-2101370\my project\data\WA_Fn-UseC_-Telco-Customer-Churn.csv"
+file_path = r"D:\AALEZZ MLOPS - Copy\mlflow-churn-project-main\data\WA_Fn-UseC_-Telco-Customer-Churn.csv"
 df = pd.read_csv(file_path)
 
 # 1. Drop customerID
@@ -68,7 +68,7 @@ print(df.dtypes)
 print(df.head())
 
 # Save the processed DataFrame to a new CSV file
-processed_file_path = r"C:\Users\HUAWEI\Desktop\Project-Al-ezz Al-dumaini-2101370\Project-Al-ezz Al-dumaini-2101370\my project\data\WA_Fn-UseC_-Telco-Customer-Churn-processed.csv"
+processed_file_path = r"D:\AALEZZ MLOPS - Copy\mlflow-churn-project-main\data\WA_Fn-UseC_-Telco-Customer-Churn-processed.csv"
 df.to_csv(processed_file_path, index=False)
 
 print(f"Processed dataset saved to: {processed_file_path}")
