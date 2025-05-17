@@ -38,7 +38,7 @@ This project builds and manages customer churn prediction models using various m
 - Key libraries: pandas, scikit-learn, xgboost, mlflow, hyperopt, requests  
 - MLflow tracking URI set to local folder:  
   ```python
-  mlflow.set_tracking_uri("file:///C:/Users/HUAWEI/Desktop/mlops-customer-churn-Prediction/mlruns")
+  mlflow.set_tracking_uri("file:///D:/AALEZZ MLOPS - Copy/mlflow-churn-project-main/mlruns")
   ```
 - MLflow UI accessible at http://localhost:5000
 
