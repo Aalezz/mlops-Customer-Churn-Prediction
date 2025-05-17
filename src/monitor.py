@@ -35,7 +35,7 @@ def evaluate_model_performance(model, X, y):
     return metrics
 
 def main():
-    mlflow.set_tracking_uri("C:\Users\HUAWEI\Desktop\Project-Al-ezz Al-dumaini-2101370\Project-Al-ezz Al-dumaini-2101370\my project\src\monitor.py")
+    mlflow.set_tracking_uri("file:///D:/AALEZZ MLOPS - Copy/mlruns")
     mlflow.set_experiment("Customer_Churn_Monitoring")
 
     # Replace this with the actual run_id of your best model from MLflow UI (from train.py or tune.py)
@@ -46,7 +46,7 @@ def main():
     print(f"Loading model from run ID: {run_id}")
     model = mlflow.sklearn.load_model(model_uri)
 
-    data_path = r"C:\Users\HUAWEI\Desktop\Project-Al-ezz Al-dumaini-2101370\Project-Al-ezz Al-dumaini-2101370\my project\data\WA_Fn-UseC_-Telco-Customer-Churn-processed.csv"
+    data_path = r"D:\AALEZZ MLOPS - Copy\mlflow-churn-project-main\data\WA_Fn-UseC_-Telco-Customer-Churn-processed.csv"
     X, y = load_test_data(data_path)
 
     metrics = evaluate_model_performance(model, X, y)
